@@ -12,6 +12,9 @@ Then run the following command:
 dotnet run --project src/SimpleBackup/SimpleBackup.csproj --Dir /path/to/watch --Bucket bucket-name
 ```
 
+## Not Ready for Production Use
+It's fine for running on your machine but there is no retry-logic if you're offline and all that good stuff. I'll get around to it someday.
+
 ## Notes:
 I set this up to use Cloudflare R2 storage, but it should work with any S3 compatible storage provider. You just might have to change the `DisablePayloadSigning = true` in the `Deamon.cs` file.
 
